@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <h1>Tutorials updated</h1>
+    <ul>
+      {% for tutorial in tutorials %}
+      <li>{{ tutorial.title }}</li>
+      <li>{{ tutorial.id}}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
+
