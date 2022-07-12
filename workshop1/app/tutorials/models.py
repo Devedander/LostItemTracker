@@ -1,9 +1,9 @@
 from django.db import models
 
 # Create your models here.
-class Tutorial(models.Model):
-    title = models.CharField(max_length=70, blank=False, default='')
-    tutorial_url = models.CharField(max_length=200, blank=False, default='')
-    image_path = models.CharField(max_length=150, blank=True, null=True)
+class Lost_Items(models.Model):
+    item = models.CharField(max_length=70, blank=False, default='')
     description = models.CharField(max_length=200, blank=False, default='')
-    published = models.BooleanField(default=False)
+    date_found = models.CharField(max_length=200, blank=False, default='')
+    lcation_found = models.CharField(max_length=150, blank=True, null=True)
+    recovered = models.BooleanField(default=False)
